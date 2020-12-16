@@ -1,0 +1,22 @@
+{
+  "name": "weepay-nodejs",
+  "version": "1.0.0",
+  "description": "weepay Integration for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weepay/weepay-nodejs.git"
+  },
+  "author": "weepay developers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weepay/weepay-nodejs/issues"
+  },
+  "homepage": "https://github.com/weepay/weepay-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
