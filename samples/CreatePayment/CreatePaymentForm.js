@@ -69,13 +69,12 @@ request.Products = productArray;
 
 const checkoutFormInitialize = new FormInitialize(request, options.Auth());
 
-
 (async () => {
     const status = await checkoutFormInitialize.getStatus();
 
     if (status == "success") {
         const checkoutFormData = await checkoutFormInitialize.getCheckoutForm();
-        // console.log(checkoutFormData);
+        console.log(checkoutFormData);
 
     } else {
         console.log(await checkoutFormInitialize.getError());
