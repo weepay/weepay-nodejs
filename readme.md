@@ -102,7 +102,7 @@ weepay.createPayment(request).then(function (res) {
 
 - You can see further examples in samples folder
 
-###Samples
+### Samples
 
 [PaymentFormCreateRequest ](https://github.com/weepay/weepay-nodejs/blob/main/samples/CreatePayment/CreatePaymentForm.js)
 
@@ -112,4 +112,4 @@ weepay.createPayment(request).then(function (res) {
 
 [PaymetDetail](https://github.com/weepay/weepay-nodejs/blob/main/samples/GetPayment/PaymentDetail.js")
 
-
+If you have any questions, please don't hesitate to contact us via Github with open an issue or contact us at destek@weepay.co.
