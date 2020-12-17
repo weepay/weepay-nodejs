@@ -18,9 +18,10 @@ To write an app using the SDK
 
 
 ```javascript
-const  weepay = require('weepay- ---');```
-
+const  weepay = require('weepay- ---');
+```
 - Create config options, with parameters (bayiId, apiKey, secretKey).
+
 ```javascript 
 
 ```
