@@ -101,6 +101,7 @@ weepay.createPayment(request).then(function (res) {
 ```
 
 - You can see further examples in samples folder
+
 ###Samples
 
 [PaymentFormCreateRequest ](https://github.com/weepay/weepay-nodejs/blob/main/samples/CreatePayment/CreatePaymentForm.js)
