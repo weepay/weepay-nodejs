@@ -1,6 +1,7 @@
 # weepay node.js 
 #### node.js credit card payment library
 
+[![NPM version](https://img.shields.io/npm/v/weepay-nodejs.svg)](https://www.npmjs.com/package/weepay-nodejs)
 
 You can sign up or sign in for an weepay account at [https://weepay.co](https://weepay.co "https://weepay.co")
 ### Requirements
