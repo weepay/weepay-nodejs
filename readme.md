@@ -13,7 +13,7 @@ You can sign up or sign in for an weepay account at [https://weepay.co](https://
 
 ### Usage
 To write an app using the SDK
-- Add dependency '--- -sdk' in your package.json file. 
+- Add dependency 'weepay-nodejs' in your package.json file. 
 - Require 'weepay-nodejs' in your file
 
 ```javascript
