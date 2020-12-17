@@ -1,5 +1,5 @@
 # weepay node.js 
-#### credit card payment library
+#### node.js credit card payment library
 
 
 You can sign up or sign in for an weepay account at [https://weepay.co](https://weepay.co "https://weepay.co")
