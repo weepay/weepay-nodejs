@@ -2,11 +2,14 @@ const BaseRequest = require("./BaseRequest");
 
 class Auth extends BaseRequest {
 
-    bayiId
-    apiKey
-    secretKey
+    auth
     baseURL = "https://api.weepay.co"
     testBaseURL = "https://test-api.weepay.co"
+
+    constructor(auth) {
+        super();
+        this.auth = auth;
+    }
 
 }
 

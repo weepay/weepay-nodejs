@@ -2,19 +2,17 @@ const BaseRequest = require("./BaseRequest")
 
 class getPaymentRequest extends BaseRequest {
 
-    #orderId
-    #paymentId
-    #locale
+    request
+
+    constructor(request) {
+        super();
+        this.request = request;
+    }
 
     getJsonObject(options) {
-
         const requestObject = {
-            Auth: {
-                bayiId: options.bayiId,
-                apiKey: options.apiKey,
-                secretKey: options.secretKey,
-            },
-            Data: { ...this },
+            Auth: options.auth,
+            Data: this.request,
         }
         return requestObject;
     }
