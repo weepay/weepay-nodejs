@@ -1,44 +1,31 @@
 const BaseRequest = require("./BaseRequest");
 
 class CreatePaymentRequest extends BaseRequest {
-    orderId
-    ipAddress
-    price
-    currency
-    locale
-    installmentNumber
-    cardHolderName
-    cardNumber
-    epireMonth
-    expireYear
-    cvcNumber
-    description
-    paymentGroup
-    paymentSource
-    paymentChannel
-    preAuth
-    cardUserKey
+
+    data
     customer
     shippingAddress
     billingAddress
     products
 
 
-    getJsonObject(options) {
-        let arr = this;
-        const { Products, customer, shippingAddress, billingAddress, ...dataObject } = { ...arr };
+    constructor(data, customer, shippingAddress, billingAddress, products) {
+        super();
+        this.data = data;
+        this.customer = customer;
+        this.shippingAddress = shippingAddress;
+        this.billingAddress = billingAddress;
+        this.products = products;
+    }
 
+    getJsonObject(options) {
         const requestObject = {
-            Auth: {
-                bayiId: options.bayiId,
-                apiKey: options.apiKey,
-                secretKey: options.secretKey,
-            },
-            Data: dataObject,
-            Customer: { ...this.customer },
-            ShippingAddress: { ...this.shippingAddress },
-            BillingAddress: { ...this.billingAddress },
-            Products: this.Products,
+            Auth: options.auth,
+            Data: this.data,
+            Products: this.products,
+            Customer: this.customer,
+            ShippingAddress: this.shippingAddress,
+            BillingAddress: this.billingAddress,
         }
         return requestObject;
     }

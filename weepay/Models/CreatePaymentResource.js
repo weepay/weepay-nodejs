@@ -8,10 +8,6 @@ class CreatePaymentResource extends BaseResource {
         this.response = response;
     }
 
-    getSecretKey() {
-        return ResourceHandler.getResponse(this.response, "secretKey");
-
-    }
     getPaymentStatus() {
         return ResourceHandler.getResponse(this.response, "paymentStatus");
 
