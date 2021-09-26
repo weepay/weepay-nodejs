@@ -1,6 +1,6 @@
 const HttpRequest = require("../HttpRequest");
 const { CreatePaymentRequestThreeD, Auth } = require("../Request");
-const CreatePaymentThreeDResource = require("./CreatePaymentThreedResource");
+const CreatePaymentThreeDResource = require("./CreatePaymentThreeDResource");
 
 class CreatePaymentThreeD extends HttpRequest {
 
